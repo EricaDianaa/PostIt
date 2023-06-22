@@ -39,6 +39,7 @@ p{
     transform: translate(500px,240px);
     z-index: 3;
     color: rgba(255, 255, 255, 0);
+   
 }
 .text2{
     transform: translate(500px,190px);
@@ -51,15 +52,15 @@ p{
     color: rgba(255, 255, 255, 0);
 }
 
-/* LE PAROLE APPAIONO E SPARISCONO MA NON RUOTANO */
+/* LE PAROLE APPAIONO 1s RUOTANO E SPARISCONO    */
 @keyframes delete{
     0%{
-    
+  
        color: lightslategray;
     }
     100%{
       color: rgba(255, 255, 255, 0);
-
+ transform:  rotate(300deg);
     }
 }
 .text1{
@@ -68,12 +69,11 @@ p{
 
  @keyframes delete2{
     0%{
-        
        color: lightslategray;
     }
     100%{
       color: rgba(255, 255, 255, 0);
-
+      transform:  rotate(900deg);
     } 
  }
  .text2{
@@ -85,9 +85,10 @@ p{
         
        color: lightslategray;
     }
+   
     100%{
       color: rgba(255, 255, 255, 0);
-
+      transform:  rotate(900deg);
     } 
  }
   .text3{
