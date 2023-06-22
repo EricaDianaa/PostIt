@@ -21,14 +21,15 @@ p{
 #testoAlternato{
     border: 4px solid gray ;
    margin: 35px;
-     
+     position: relative;
 }
 
 .parole{
-    display: flex;
-    flex-direction: column;
+    
+    /* display: flex;
+    flex-direction: column; */
     align-items: center;
-    margin-left: 240px;
+    /* margin-left: 240px; */
     
    
 
@@ -36,27 +37,31 @@ p{
    background-color: white;
 }
 .text1{
-
- transform: translate(70px,240px);
-    z-index: 3;
-    color: rgba(255, 255, 255, 0);
+position: absolute;
+top: 40%;
+    left: 33%;
+    color: rgba(77, 19, 19, 0);
    
 }
 .text2{
-   transform: translate(70px,190px);
-    z-index: 2;
-    color: rgba(255, 255, 255, 0);
+    position: absolute;
+top: 40%;
+    left: 33%;
+
+    color: rgba(126, 17, 17, 0);
 }
 .text3{
-  transform: translate(70px,145px);
-    z-index: 1;
-    color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 40%;
+        left: 33%;
+
+    color: rgba(126, 38, 38, 0);
 }
 
 /* LE PAROLE APPAIONO 1s RUOTANO E SPARISCONO    */
 @keyframes delete{
     0%{
-        /* transform: translateY(72px); */
+        transform: translateY(42px);
        color: lightslategray;
     }
     100%{
@@ -70,7 +75,7 @@ p{
 
  @keyframes delete2{
     0%{ 
-        /* transform: translateY(72px); */
+        transform: translateY(42px);
        color: lightslategray;
     }
     100%{
@@ -79,12 +84,12 @@ p{
     } 
  }
  .text2{
-    animation: delete2 5s linear 7s forwards;
+    animation: delete2 5s linear 5s forwards;
 } 
 
 @keyframes delete3{
     0%{
-        /* transform: translateY(72px); */
+        transform: translateY(42px);
        color: lightslategray;
     }
    
@@ -94,7 +99,7 @@ p{
     } 
  }
   .text3{
-    animation: delete3 9s linear 12s forwards;
+    animation: delete3 5s linear 10s forwards;
 }  
 
 
