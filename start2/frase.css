@@ -39,21 +39,21 @@ p{
 .text1{
 position: absolute;
 top: 40%;
-    left: 33%;
+    left: 550px;
     color: rgba(77, 19, 19, 0);
    
 }
 .text2{
     position: absolute;
 top: 40%;
-    left: 33%;
+    left: 550px;
 
     color: rgba(126, 17, 17, 0);
 }
 .text3{
     position: absolute;
     top: 40%;
-        left: 33%;
+        left: 550px;
 
     color: rgba(126, 38, 38, 0);
 }
